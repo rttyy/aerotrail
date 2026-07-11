@@ -9,6 +9,11 @@ and it starts, land and shut down and the flight is saved with its track,
 statistics and a landing rating. It is free and works with both Microsoft Flight
 Simulator 2020 and 2024.
 
+## Screenshots
+
+![Flight feed](docs/images/feed.png)
+![Flight detail](docs/images/detail.png)
+
 ## Features
 
 **Automatic flight recording.** AeroTrail detects the simulator and connects on
