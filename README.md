@@ -11,10 +11,10 @@ Simulator 2020 and 2024.
 
 ## Screenshots
 
-![flight](docs/images/flight.png)
-![list](docs/images/list.png)
-![Settings](docs/images/settings.png)
-![Stats](docs/images/stats.png)
+![flight](doc/images/flight.png)
+![list](doc/images/list.png)
+![Settings](doc/images/settings.png)
+![Stats](doc/images/stats.png)
 
 ## Features
 
