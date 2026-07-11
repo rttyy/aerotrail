@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AeroTrail — Privacy Policy</title>
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; max-width: 760px; margin: 40px auto;
+           padding: 0 20px; color: #2B2B2E; line-height: 1.6; }
+    h1 { color: #FC4C02; }
+    h2 { margin-top: 1.8em; border-bottom: 1px solid #E8E8EC; padding-bottom: 4px; }
+    code { background: #F5F5F7; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+    a { color: #FC4C02; }
+    .updated { color: #77777D; font-size: 0.9em; }
+    .langbar { display: flex; gap: 6px; justify-content: flex-end; margin-bottom: 8px; }
+    .langbar button { font: inherit; font-size: 0.85em; padding: 4px 12px; cursor: pointer;
+                      border: 1px solid #E8E8EC; background: #fff; border-radius: 6px; color: #77777D; }
+    .langbar button.active { background: #FC4C02; border-color: #FC4C02; color: #fff; font-weight: 600; }
+    /* Anglais par défaut, même sans JavaScript */
+    .lang-fr { display: none; }
+  </style>
+</head>
+<body>
+  <div class="langbar">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-fr" onclick="setLang('fr')">Français</button>
+  </div>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <div class="lang lang-en">
+    <h1>AeroTrail — Privacy Policy</h1>
+    <p class="updated">Last updated: 11 July 2026</p>
+
+    <p>AeroTrail is a Windows desktop application that records your flights in
+    Microsoft Flight Simulator and lets you, if you wish, publish them to your
+    Strava account. This policy explains what data is collected, how it is used,
+    and what your rights are.</p>
+
+    <h2>Who is responsible for your data?</h2>
+    <p>AeroTrail is developed by a320cockpitdiy. For any question about your data,
+    contact us at <a href="mailto:eliottferry1@gmail.com">eliottferry1@gmail.com</a>.</p>
+
+    <h2>What data is collected?</h2>
+    <ul>
+      <li><strong>Flight data</strong>: from Microsoft Flight Simulator via
+      SimConnect (GPS track, altitude, speed, aircraft used, departure/arrival
+      airports, duration, landing rating). This data is generated and stored
+      <strong>exclusively on your computer</strong>.</li>
+      <li><strong>Strava authentication tokens</strong>: if you connect your
+      Strava account, an OAuth access token and refresh token are stored locally,
+      encrypted (Windows DPAPI).</li>
+      <li><strong>Technical logs</strong>: local log files used only for
+      diagnostics, kept for 14 days then automatically deleted.</li>
+    </ul>
+    <p>AeroTrail has no server: none of this data passes through any
+    infrastructure we operate.</p>
+
+    <h2>How is your data used?</h2>
+    <ul>
+      <li>Your flight data is used locally to display your history, map,
+      statistics and records.</li>
+      <li>If you publish a flight, the following data is sent to Strava, and only
+      to Strava, via its official API: flight title and description, GPS track,
+      distance, duration, speed, activity type.</li>
+      <li>No flight data or account data is sold, rented or shared with any third
+      party other than Strava, and only with your explicit consent. (Displaying
+      the map loads tiles from third-party providers — see "Map display" below.)</li>
+    </ul>
+
+    <h2>Map display (third-party services)</h2>
+    <p>When you open a flight, the map is displayed using third-party services:
+    map tiles from OpenStreetMap, elevation data from Amazon Web Services (Mapzen
+    terrain tiles), and mapping libraries from a public CDN (unpkg). To serve these,
+    those providers receive your IP address and the map area you are viewing (which
+    corresponds to your flight). They do not receive your Strava data or account.
+    No map request is made while a flight is merely being recorded, and the
+    application works without the map when offline.</p>
+
+    <h2>Legal basis</h2>
+    <ul>
+      <li>Processing of flight data is based on performing the requested service
+      (recording and displaying your flights).</li>
+      <li>Publishing to Strava is based on your <strong>explicit consent</strong>,
+      collected before each connection to your Strava account, and revocable at
+      any time.</li>
+    </ul>
+
+    <h2>Retention period</h2>
+    <p>Your flight data stays on your machine as long as the application is
+    installed. You can delete it at any time (see "Your rights"). Strava tokens
+    are deleted as soon as you disconnect.</p>
+
+    <h2>Your rights</h2>
+    <p>In accordance with the GDPR, you have the right of access, rectification,
+    erasure, restriction of processing, objection and portability. Concretely,
+    with AeroTrail:</p>
+    <ul>
+      <li><strong>Access and portability</strong>: all your data is already on
+      your disk (SQLite database and GPX files in
+      <code>%LOCALAPPDATA%\AeroTrail\</code>), exportable and readable at any time.</li>
+      <li><strong>Withdrawal of consent</strong>: disable automatic publishing or
+      disconnect your Strava account from Settings, at any time.</li>
+      <li><strong>Deletion</strong>: use the "Disconnect Strava and delete my
+      data" button in Settings, or manually delete the
+      <code>%LOCALAPPDATA%\AeroTrail\</code> folder.</li>
+      <li>For any request you cannot carry out yourself, write to
+      <a href="mailto:eliottferry1@gmail.com">eliottferry1@gmail.com</a>; we will
+      respond within 30 days at most and confirm the effective deletion in writing.</li>
+    </ul>
+
+    <h2>Sharing with Strava</h2>
+    <p>AeroTrail uses the official Strava API (v3, OAuth 2.0). Your use of Strava
+    remains governed by Strava's privacy policy
+    (<a href="https://www.strava.com/legal/privacy">strava.com/legal/privacy</a>).</p>
+
+    <h2>Children</h2>
+    <p>AeroTrail is not intended for children under 13 and does not knowingly
+    collect data about them.</p>
+
+    <h2>Changes</h2>
+    <p>This policy may be updated; any substantial change will be flagged in the
+    application.</p>
+  </div>
+
+  <!-- ===================== FRANÇAIS ===================== -->
+  <div class="lang lang-fr">
+    <h1>AeroTrail — Politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : 11 juillet 2026</p>
+
+    <p>AeroTrail est une application de bureau Windows qui enregistre vos vols dans
+    Microsoft Flight Simulator et vous permet, si vous le souhaitez, de les publier
+    sur votre compte Strava. Cette politique explique quelles données sont
+    collectées, comment elles sont utilisées, et quels sont vos droits.</p>
+
+    <h2>Qui est responsable de vos données ?</h2>
+    <p>AeroTrail est développé par a320cockpitdiy. Pour toute question relative à vos
+    données, contactez-nous à <a href="mailto:eliottferry1@gmail.com">eliottferry1@gmail.com</a>.</p>
+
+    <h2>Quelles données sont collectées ?</h2>
+    <ul>
+      <li><strong>Données de vol</strong> : issues de Microsoft Flight Simulator via
+      SimConnect (trace GPS, altitude, vitesse, appareil utilisé, aéroports de
+      départ/arrivée, durée, note d'atterrissage). Ces données sont générées et
+      stockées <strong>exclusivement sur votre ordinateur</strong>.</li>
+      <li><strong>Jetons d'authentification Strava</strong> : si vous connectez votre
+      compte Strava, un jeton d'accès et un jeton de rafraîchissement OAuth sont
+      stockés localement, chiffrés (DPAPI Windows).</li>
+      <li><strong>Journaux techniques</strong> : fichiers de logs locaux utilisés
+      uniquement pour le diagnostic, conservés 14 jours puis supprimés automatiquement.</li>
+    </ul>
+    <p>AeroTrail ne dispose d'aucun serveur : aucune de ces données ne transite par une
+    infrastructure que nous exploitons.</p>
+
+    <h2>Comment vos données sont-elles utilisées ?</h2>
+    <ul>
+      <li>Vos données de vol servent localement à afficher votre historique, votre
+      carte, vos statistiques et vos records.</li>
+      <li>Si vous publiez un vol, les données suivantes sont envoyées à Strava, et
+      uniquement à Strava, via son API officielle : titre et description du vol,
+      trace GPS, distance, durée, vitesse, type d'activité.</li>
+      <li>Aucune donnée de vol ou de compte n'est vendue, louée ou partagée avec un
+      tiers autre que Strava, et uniquement avec votre consentement explicite.
+      (L'affichage de la carte charge des tuiles auprès de fournisseurs tiers —
+      voir « Affichage de la carte » ci-dessous.)</li>
+    </ul>
+
+    <h2>Affichage de la carte (services tiers)</h2>
+    <p>Lorsque vous ouvrez un vol, la carte est affichée à l'aide de services tiers :
+    tuiles cartographiques depuis OpenStreetMap, données d'altitude depuis Amazon
+    Web Services (tuiles de relief Mapzen), et bibliothèques cartographiques depuis
+    un CDN public (unpkg). Pour les fournir, ces prestataires reçoivent votre adresse
+    IP et la zone de carte que vous consultez (laquelle correspond à votre vol). Ils
+    ne reçoivent ni vos données ni votre compte Strava. Aucune requête cartographique
+    n'est effectuée pendant le simple enregistrement d'un vol, et l'application
+    fonctionne sans carte lorsque vous êtes hors ligne.</p>
+
+    <h2>Base légale</h2>
+    <ul>
+      <li>Le traitement des données de vol repose sur l'exécution du service demandé
+      (enregistrer et afficher vos vols).</li>
+      <li>La publication sur Strava repose sur votre <strong>consentement explicite</strong>,
+      recueilli avant chaque connexion à votre compte Strava, et révocable à tout moment.</li>
+    </ul>
+
+    <h2>Durée de conservation</h2>
+    <p>Vos données de vol restent sur votre machine tant que l'application est installée.
+    Vous pouvez les supprimer à tout moment (voir « Vos droits »). Les jetons Strava
+    sont supprimés dès que vous vous déconnectez.</p>
+
+    <h2>Vos droits</h2>
+    <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification,
+    d'effacement, de limitation du traitement, d'opposition et de portabilité.
+    Concrètement, avec AeroTrail :</p>
+    <ul>
+      <li><strong>Accès et portabilité</strong> : toutes vos données sont déjà sur
+      votre disque (base SQLite et fichiers GPX dans <code>%LOCALAPPDATA%\AeroTrail\</code>),
+      exportables et lisibles à tout moment.</li>
+      <li><strong>Retrait du consentement</strong> : désactivez la publication
+      automatique ou déconnectez votre compte Strava depuis les Réglages, à tout moment.</li>
+      <li><strong>Suppression</strong> : utilisez le bouton « Déconnecter Strava et
+      supprimer mes données » dans les Réglages, ou supprimez manuellement le dossier
+      <code>%LOCALAPPDATA%\AeroTrail\</code>.</li>
+      <li>Pour toute demande que vous ne pouvez pas effectuer vous-même, écrivez à
+      <a href="mailto:eliottferry1@gmail.com">eliottferry1@gmail.com</a> ; nous
+      répondrons sous 30 jours maximum et vous confirmerons par écrit la suppression effective.</li>
+    </ul>
+
+    <h2>Partage avec Strava</h2>
+    <p>AeroTrail utilise l'API officielle Strava (v3, OAuth 2.0). Votre utilisation de
+    Strava reste régie par la politique de confidentialité de Strava
+    (<a href="https://www.strava.com/legal/privacy">strava.com/legal/privacy</a>).</p>
+
+    <h2>Enfants</h2>
+    <p>AeroTrail ne s'adresse pas aux enfants de moins de 13 ans et ne collecte pas
+    sciemment de données les concernant.</p>
+
+    <h2>Modifications</h2>
+    <p>Cette politique peut être mise à jour ; toute modification substantielle sera
+    signalée dans l'application.</p>
+  </div>
+
+  <script>
+    function setLang(l) {
+      document.documentElement.lang = l;
+      // 'block' explicite : un style inline vide retomberait sur la règle CSS
+      // « .lang-fr { display: none } » et masquerait le français.
+      document.querySelector('.lang-en').style.display = (l === 'en') ? 'block' : 'none';
+      document.querySelector('.lang-fr').style.display = (l === 'fr') ? 'block' : 'none';
+      document.getElementById('btn-en').classList.toggle('active', l === 'en');
+      document.getElementById('btn-fr').classList.toggle('active', l === 'fr');
+    }
+  </script>
+</body>
+</html>
